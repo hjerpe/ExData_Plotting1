@@ -29,7 +29,8 @@ if (!file.exists('./data1')){
     #temp <- tempfile()
     #download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip",temp)
     #unlink(temp)
-    download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip",destfile="./data1/household_power_consumption.zip")
+    download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip",
+                  destfile="./data1/household_power_consumption.zip")
 }
 # Try later to use sql to search for desired dates.
 #close.connection('./data/household_power_consumption.txt')
