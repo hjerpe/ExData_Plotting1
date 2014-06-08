@@ -67,7 +67,8 @@ Sys.setlocale("LC_TIME", "English") # Change to non-local time zone.
 # Open file to save plot on disk.
 png(filename = "plot4.png",width = 480, height = 480)
 
-# Plot 4 subplots of size 4x4.
+# Plot 4 subplots of size 4x4, plot 2,3 time series of date times vs 
+# voltage and time series of date time vs Global_reactive_power.
 par(mfrow = c(2,2),lwd=0.5)
 # Plot 1.
 plot(xTimes,powerData2$Global_active_power,type="n",

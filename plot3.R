@@ -63,7 +63,8 @@ xTimes <-  as.POSIXlt(paste(powerData2$Date,
 
 Sys.setlocale("LC_TIME", "English") # Change to non-local time zone.
 
-# Plot and save time series of date times vs Global Active Power (kilowatts).
+# Plot and save time series of date times vs Energy sub metering 1,2 and 3
+# (see comments at top of file).
 png(filename = "plot3.png",width = 480, height = 480) # Open file to save plot on disk.
 plot(xTimes,powerData2$Sub_metering_1,type="n",
      xlab="",
